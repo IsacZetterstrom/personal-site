@@ -1,0 +1,25 @@
+/* Pre-made variables */
+
+
+/* default values for fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+body{
+    font-family: 'Roboto', sans-serif;
+}
+* {
+    h1{
+        font-family: 'Lora', serif;
+        font-size: 2em;
+        color: white;
+    }
+    h2{
+        font-size: 1.5em;
+        color: rgb(139, 139, 139);
+    }
+    h3{
+        font-size: 1.5em;
+    }
+    p{
+        font-size: 1em;
+    }
+}

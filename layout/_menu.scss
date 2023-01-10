@@ -1,0 +1,77 @@
+@use "../abstracts/variables";
+.nav-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 10em;
+    min-width: 1em;
+}
+.container-items{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    z-index: 10;
+}
+.item-menu,.menu-btn{
+    background-color: rgba(61, 81, 134);
+    border-color: rgba(176,198,255);
+} 
+.item-menu{
+    overflow: hidden;
+    width: 40%;
+    height: 40%;
+}
+.menu-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2.6em;
+    width: 2.6em;
+    font-size: 1.7em;
+    color: white;
+    border-radius: 100%;
+    z-index: 20;
+}
+.menu-btn::before{
+    content: "";
+    position: absolute;
+    height: 50px;
+    color: black;
+    display: inline-block;
+
+}
+.nav-container:hover .container-items{
+    width: 15em;
+    height: 15em;
+    transition: 1s all;
+}
+.item-menu:hover{
+    opacity: 60%;
+}
+.nav-container:not(:hover) .container-items{
+    width: 5em;
+    height: 5em;
+    transition: 1s all;
+}
+.menu-one{
+    border-radius: 50em 0 0 0;
+    // background: linear-gradient(-45deg, rgb(19, 50, 83), rgba(115, 140, 166));
+}
+.menu-two{
+    border-radius: 0 50em 0 0;
+    // background: linear-gradient(45deg, rgb(19, 50, 83), rgba(115, 140, 166));
+}
+.menu-three{
+    border-radius: 0 0 0 50em;
+    // background: linear-gradient(225deg, rgb(19, 50, 83), rgba(115, 140, 166));
+}
+.menu-four{
+    border-radius: 0 0 50em 0;
+    // background: linear-gradient(135deg, rgb(19, 50, 83), rgba(115, 140, 166));
+}
+

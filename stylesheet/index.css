@@ -1,0 +1,141 @@
+/* Pre-made variables */
+/* default values for fonts*/
+@import url("https://fonts.googleapis.com/css2?family=Lora:wght@400;500&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+* h1 {
+  font-family: "Lora", serif;
+  font-size: 2em;
+  color: white;
+}
+* h2 {
+  font-size: 1.5em;
+  color: rgb(139, 139, 139);
+}
+* h3 {
+  font-size: 1.5em;
+}
+* p {
+  font-size: 1em;
+}
+
+.nav-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 10em;
+  min-width: 1em;
+}
+
+.container-items {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  z-index: 10;
+}
+
+.item-menu, .menu-btn {
+  background-color: rgb(61, 81, 134);
+  border-color: rgb(176, 198, 255);
+}
+
+.item-menu {
+  overflow: hidden;
+  width: 40%;
+  height: 40%;
+}
+
+.menu-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 2.6em;
+  width: 2.6em;
+  font-size: 1.7em;
+  color: white;
+  border-radius: 100%;
+  z-index: 20;
+}
+
+.menu-btn::before {
+  content: "";
+  position: absolute;
+  height: 50px;
+  color: black;
+  display: inline-block;
+}
+
+.nav-container:hover .container-items {
+  width: 15em;
+  height: 15em;
+  transition: 1s all;
+}
+
+.item-menu:hover {
+  opacity: 60%;
+}
+
+.nav-container:not(:hover) .container-items {
+  width: 5em;
+  height: 5em;
+  transition: 1s all;
+}
+
+.menu-one {
+  border-radius: 50em 0 0 0;
+}
+
+.menu-two {
+  border-radius: 0 50em 0 0;
+}
+
+.menu-three {
+  border-radius: 0 0 0 50em;
+}
+
+.menu-four {
+  border-radius: 0 0 50em 0;
+}
+
+.main-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 20% 0 0 0;
+}
+
+.header-title, .header-subtitle {
+  margin: 0.1em 0 0.1em 0;
+  text-shadow: 0 0 10px grey;
+}
+
+body, html {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  background: linear-gradient(rgb(4, 5, 9), rgb(33, 44, 74));
+}
+
+body {
+  display: grid;
+  grid-template-rows: 15em 13em auto;
+}
+
+.potrait-background {
+  background-image: url(/assets/blueIsac.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  position: absolute;
+  height: 300px;
+  width: 300px;
+  bottom: -2px;
+}/*# sourceMappingURL=index.css.map */

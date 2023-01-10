@@ -1,0 +1,13 @@
+@use "../abstracts/variables";
+
+.main-header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20% 0 0 0;
+}
+.header-title, .header-subtitle{
+    margin: .1em 0 .1em 0;
+    text-shadow: 0 0 10px grey;
+}

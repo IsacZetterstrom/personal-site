@@ -1,0 +1,16 @@
+/* Pre-made variables */
+/* default values for fonts*/
+* h1 {
+  font-size: 3em;
+  color: white;
+}
+* h2 {
+  font-size: 2.5em;
+  color: green;
+}
+* h3 {
+  font-size: 2em;
+}
+* p {
+  font-size: 1em;
+}/*# sourceMappingURL=variables.css.map */
