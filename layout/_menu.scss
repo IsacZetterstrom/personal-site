@@ -50,6 +50,9 @@
     height: 15em;
     transition: 1s all;
 }
+.item-menu:hover{
+    opacity: 60%;
+}
 .nav-container:not(:hover) .container-items{
     width: 5em;
     height: 5em;
